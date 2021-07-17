@@ -48,7 +48,7 @@ class WifiCard extends React.Component {
       <div>
         <div className="mt-6 p-5 border-dashed border-2 border-gray-600">
           <div className="text-4xl font-bold">Đăng nhập WiFi</div>
-          <div className="flex mt-2">
+          <div className="flex mt-2 flex-col print:flex-row md:flex-row justify-center items-center">
             <div className="w-1/3 flex justify-center items-center">
               <QRCode
                 value={this.state.qrCode}
@@ -97,7 +97,7 @@ class WifiCard extends React.Component {
               </div>
 
               <div className="block my-3 print:hidden">
-                <div className="inline-flex items-center">
+                <div className="flex flex-col md:flex-row justify-start md:items-center">
                   <span className="text-gray-700 mr-3">Mã hóa:</span>
                   <label className="inline-flex items-center">
                     <input
